@@ -5,7 +5,7 @@ Assignments from MIT's Introduction to Computer Science and Programming class on
 PDFs of the assignments are included in the repo, as well as the starting code and solutions provided by the instructor.
 
 
-_________________________
+
 
 
 >_I did these assignments a little bit differently than the instructor suggests. This is a free course and, as such, there is no feedback or evaluation. So I decided to have some fun :)_
