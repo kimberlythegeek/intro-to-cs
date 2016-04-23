@@ -42,7 +42,7 @@ fast it is. Produce the output in the same format as you did in problem 2.
 
 
 
->*I like to make programs that work like a standard application does; meaning that widely-used programs don't run once and then exit, they run until the user chooses to exit the program.*
+>*I like to make programs that work like a standard application does. In the real world, we usually don't want a program to run once and then exit, we want them to run until the user chooses to exit the program.*
 
 >*So, rather than have three separate files that the user has to run again and again for each calculation, I made separate functions in a single program.*
 
@@ -101,7 +101,7 @@ root it found as a float.
 
 >*This is so I can take the derivative of a polynomial and return a new list, minus the x^0 coefficient.*
 
->*I also separated the calculations (`evaluate_poly`, `compute_derivative`, `compute_root`) and the output of the results (`print_evaluation`, `print_derivative`, `print_root`) into separate functions, so that the calculate methods `return` a value which can be used in other parts of the program.*
+>*I also separated the calculations (`evaluate_poly()`, `compute_derivative()`, `compute_root()`) and the output of the results (`print_evaluation()`, `print_derivative()`, `print_root()`) into separate functions, so that the calculate methods `return` a value which can be used in other parts of the program.*
 
 >*I used a list of values, instead of separate variables, to keep track of each guess. I did this so that I can more easily reference each guess by its subscript index. If it is possible to dynamically name variables by concatenating other variables (naming each new guess x_i, where i is the iteration) and also referencing them using concatenation, I haven't figured out how yet.*
 
