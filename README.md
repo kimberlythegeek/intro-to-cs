@@ -1,12 +1,21 @@
-# intro-to-cs
+# Intro to Computer Science
 
 Assignments from MIT's Introduction to Computer Science and Programming class on OpenCourseware: http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/
+
+PDFs of the assignments are included in the repo, as well as the starting code and solutions provided by the instructor.
+
+
+_________________________
+
 
 >_I did these assignments a little bit differently than the instructor suggests. This is a free course and, as such, there is no feedback or evaluation. So I decided to have some fun :)_
 
 >_Kimberly The Geek_
 
-# problem-set-1
+
+
+
+# Problem Set 1
 
 ## Paying Off Credit Card Debt
 ### Problem 1: 
@@ -30,13 +39,17 @@ Wikipedia page here) to find the smallest monthly payment to the cent (no more m
 $10) such that we can pay off the debt within a year. Try it out with large inputs, and notice how
 fast it is. Produce the output in the same format as you did in problem 2. 
 
+
 _________________________
 
+>*I like to make programs that work like any standard application does; meaning that widely-used programs don't run once and then exit, they run until the user chooses to exit the program. So, rather than have three separate files that the user has to run again and again for each calculation, I made separate functions in a single program. The program runs, the user inputs a number corresponding to the desired function/program, or 0 to exit. Each function will run until a negative value is input, which then returns the user to the main menu.*
+
+>*I also prefer programs that are more fun to use, providing more informative and aesthetically pleasing output. The instructor's solutions are included in the repo.*
 
 
 
 
-# problem-set-2
+# Problem Set 2
 
 ## Part 1 - Successive Approximation
 
@@ -67,6 +80,20 @@ iterations it took to get to that root.
 The function starts at `x_0`. It then applies Newton’s method. It ends when it finds a root `x` such
 that the absolute value of f(x) is less than `epsilon`, i.e. f(x) is close enough to zero. It returns the
 root it found as a float. 
+
+
+_________________________
+
+>*Again I made a program that will run until the user chooses to exit. I also added a program that simply prints out a polynomial. The instructor's program requires the user to input the coefficients of a polynomial in the **reverse** order that they would normally be written. This is done so that, in his program, he can figure out the exponent of x based on the coefficient's index in the tuple. I wrote my program such that the user can input it in a more logical order, one that accommodates how humans think about polynomials.*
+
+>*The format that the instructor requires for this class is just declarations of functions. I assume that he has his own program he runs to test these functions. However, since I don't have interaction with the teacher, I wrote my program to both declare and utilize the functions. For now the function declarations and the main program are in the same file.*
+
+>*The instructor requires the use of tuples in his assignment. I originally wrote my program to use tuples, but because tuples are immutable, I changed it to use lists instead. This is so I can take the derivative of a polynomial and return a new list, minus the x^0 element. I also separated the calculations (`evaluate_poly`, `compute_derivative`, `compute_root`) and the output of the results (`print_evaluation`, `print_derivative`, `print_root`) into separate functions, so that the calculate methods `return` a value which can be used in other parts of the program.*
+
+>*I also used a list to keep track of each guess. I did this so that I can more easily reference each guess by its subscript index. If it is possible to dynamically name variables by concatenating other variables (naming each new guess x_i, where i is the iteration) and also referencing them using concatenation, I haven't figured out how yet.*
+
+
+
 
 ## Part 2 - Hangman
 
