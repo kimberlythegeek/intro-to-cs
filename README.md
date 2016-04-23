@@ -54,6 +54,7 @@ fast it is. Produce the output in the same format as you did in problem 2.
 
 
 
+
 # Problem Set 2
 
 ## Part 1 - Successive Approximation
@@ -104,6 +105,7 @@ root it found as a float.
 >*I also separated the calculations (`evaluate_poly()`, `compute_derivative()`, `compute_root()`) and the output of the results (`print_evaluation()`, `print_derivative()`, `print_root()`) into separate functions, so that the calculate methods `return` a value which can be used in other parts of the program.*
 
 >*I used a list of values, instead of separate variables, to keep track of each guess. I did this so that I can more easily reference each guess by its subscript index. If it is possible to dynamically name variables by concatenating other variables (naming each new guess x_i, where i is the iteration) and also referencing them using concatenation, I haven't figured out how yet.*
+
 
 
 
