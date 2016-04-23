@@ -125,6 +125,7 @@ editing. You should get the following output when running the unmodified version
 of ps2_hangman.py:
 
 >`Loading word list from file...`
+
 >`55900 words loaded.`
 
 You will want to do all of your coding for this problem within this file as well because you will
