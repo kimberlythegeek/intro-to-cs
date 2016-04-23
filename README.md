@@ -40,15 +40,16 @@ $10) such that we can pay off the debt within a year. Try it out with large inpu
 fast it is. Produce the output in the same format as you did in problem 2. 
 
 
-_________________________
 
->*I like to make programs that work like any standard application does; meaning that widely-used programs don't run once and then exit, they run until the user chooses to exit the program.*
+
+>*I like to make programs that work like a standard application does; meaning that widely-used programs don't run once and then exit, they run until the user chooses to exit the program.*
 
 >*So, rather than have three separate files that the user has to run again and again for each calculation, I made separate functions in a single program.*
 
 >*The program runs, the user inputs a number corresponding to the desired function/program, or 0 to exit. Each function will run until a negative value is input, which then returns the user to the main menu.*
 
 >*I also prefer programs that are more fun to use, providing more informative and aesthetically pleasing output. The instructor's solutions are included in the repo.*
+
 
 
 
@@ -86,7 +87,7 @@ that the absolute value of f(x) is less than `epsilon`, i.e. f(x) is close enoug
 root it found as a float. 
 
 
-_________________________
+
 
 >*Again I made a program that will run until the user chooses to exit. I also added a program/function that simply prints out a polynomial.*
 
@@ -103,6 +104,7 @@ _________________________
 >*I also separated the calculations (`evaluate_poly`, `compute_derivative`, `compute_root`) and the output of the results (`print_evaluation`, `print_derivative`, `print_root`) into separate functions, so that the calculate methods `return` a value which can be used in other parts of the program.*
 
 >*I used a list of values, instead of separate variables, to keep track of each guess. I did this so that I can more easily reference each guess by its subscript index. If it is possible to dynamically name variables by concatenating other variables (naming each new guess x_i, where i is the iteration) and also referencing them using concatenation, I haven't figured out how yet.*
+
 
 
 
