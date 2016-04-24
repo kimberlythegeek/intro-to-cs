@@ -136,5 +136,5 @@ be writing a program that depends on each function you write.
 
 >1) Select a random word from `words.txt`
 
->...*I modified the helper code so that the program asks the user for a file name, or the user can press `Enter` to use the default `words.txt`*
+>  *I modified the helper code so that the program asks the user for a file name, or the user can press `Enter` to use the default `words.txt`*
 
