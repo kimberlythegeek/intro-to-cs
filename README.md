@@ -131,3 +131,10 @@ of ps2_hangman.py:
 You will want to do all of your coding for this problem within this file as well because you will
 be writing a program that depends on each function you write. 
 
+
+>The teacher's instructions state that the program must:
+
+>1) Select a random word from `words.txt`
+
+>...*I modified the helper code so that the program asks the user for a file name, or the user can press `Enter` to use the default `words.txt`*
+
