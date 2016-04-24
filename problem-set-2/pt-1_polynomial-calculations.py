@@ -3,12 +3,13 @@
 # Successive Approximation
 #
 
-#Print evaluation of polynomial
+# Print evaluation of polynomial
+
 def print_evaluation(poly, x):
 
     print "\n\n----------------------------------------------------\n\n\nResult: " + str(evaluate_poly(poly,x))
 
-#Calculate evaluation of polynomial
+# Calculate evaluation of polynomial
 def evaluate_poly(poly, x):
 
     i = 0
@@ -27,13 +28,13 @@ def evaluate_poly(poly, x):
 
 
 
-#Print derivative of polynomial
+# Print derivative of polynomial
 def print_derivative(poly):
 
     print_poly(poly)
     print "\n\n\n----------------------------------------------------\n\n\n f'" + get_string(compute_derivative(poly))
 
-#Calculate derivative of polynomial
+# Calculate derivative of polynomial
 def compute_derivative(poly):
 
     i = 0
@@ -50,26 +51,26 @@ def compute_derivative(poly):
     return derivative
 
 
-#Print root of polynomial
+# Print root of polynomial
 def print_root(poly, x_0, epsilon):
 
     root = compute_root(poly, x_0, epsilon)
     print "\n\n\n----------------------------------------------------\n\n\nEstimated root of f" + get_string(poly) + " = " + str(root[0])
     print "Number of iterations to find root: " + str(root[1])
 
-#Calculate root
+# Calculate root
 def compute_root(poly, x_0, epsilon):
 
-    #1 calculate f(x_0)
-    #2 if absolute value of f(x_0) is less than epsilon, it's close enough
-    #3 else, x_n+1 = x_n - f(x_n)/f`(x_n)
+    # 1 calculate f(x_0)
+    # 2 if absolute value of f(x_0) is less than epsilon, it's close enough
+    # 3 else, x_n+1 = x_n - f(x_n)/f`(x_n)
 
     i = 1
     x = [x_0]
 
-    #while still searching for the root
+    # while still searching for the root
     while True:
-        #find a new x
+        # find a new x
         x.append(x[i-1] - evaluate_poly(poly,x[i-1])/evaluate_poly(compute_derivative(poly),x[i-1]))
         print "New x: x_" + str(i) + " = " + str(x[i])
 
