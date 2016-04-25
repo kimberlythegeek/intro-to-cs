@@ -15,16 +15,19 @@ PDFs of the assignments are included in the repo, as well as the starting code a
 ## Table of Contents
 
  - [Problem Set 1 - Paying Off Credit Card Debt](#problem-set-1)
-   - [Problem 1: Paying the Minimum](#problem-1)
-   - [Problem 2: Paying Off Debt in a Year](#problem-2)
-   - [Problem 3: Use Bisection Searching to Improved Efficiency](#problem-3)
-   - [Comments](#comments-on-problem-set-1)
+    - [Problem 1: Paying the Minimum](#problem-1)
+    - [Problem 2: Paying Off Debt in a Year](#problem-2)
+    - [Problem 3: Use Bisection Searching to Improved Efficiency](#problem-3)
+    - [Comments](#comments-on-problem-set-1)
  - [Problem Set 2](#problem-set-2)
-   - [Part 1 - Successive Approximation](#part-1---successive-approximation)
-     - [Problem 1: Evaluating Polynomials](#problem-1-1)
-     - [Problem 2: Derivatives of Polynomials](#problem-2-1)
-     - [Problem 3: Root of a Polynomials using Newton's Method](#problem-3-1)
-     - [Comments](#comments-on-problem-set-2-part-1)
+    - [Part 1 - Successive Approximation](#part-1---successive-approximation)
+      - [Problem 1: Evaluating Polynomials](#problem-1-1)
+      - [Problem 2: Derivatives of Polynomials](#problem-2-1)
+      - [Problem 3: Root of a Polynomials using Newton's Method](#problem-3-1)
+      - [Comments](#comments-on-problem-set-2-part-1)
+    - [Part 2 - Hangman](#part-2---hangman)
+      - [Problem 4: A Word Game](#problem-4)
+      - [Comments](#comments-on-problem-set-2-part-2)
 
 
 
@@ -173,7 +176,9 @@ The teacher's instructions state that the program must:
 
   * Whether the player wins or loses, display the full word at the end of the game
 
-___
+
+
+###### Comments on Problem Set 2: Part 2
 
 >*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
 
