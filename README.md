@@ -141,39 +141,39 @@ ____
 
 
 
->The teacher's instructions state that the program must:
+The teacher's instructions state that the program must:
 
->1. Select a random word from `words.txt`
+1. Select a random word from `words.txt`
 
->  *I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
+  *I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
 
->2. Be interactive:
+2. Be interactive:
 
->  * Let user how many letters are in the word
+  * Let user how many letters are in the word
 
->  * Ask the user to guess letters
+  * Ask the user to guess letters
 
->  * Give feedback after each guess
+  * Give feedback after each guess
 
->  * Display the partially guessed word
+  * Display the partially guessed word
 
 > *I created a list item to keep track of the remaining letters in the alphabet that the user has **not** yet used, so that I can show it to the user each turn.*
 
 > *At any point while guessing letters, the user can type `exit` or `quit` to return to the previous screen (Difficulty Selection). Otherwise, only the first letter input will be read.*
 
->3. Have a finite number of guesses
+3. Have a finite number of guesses
 
->  * Remind user how many guesses are left
+  * Remind user how many guesses are left
 
 > *I did create the game to have a finite number of guess, but I also allow the user to choose how many guesses they would like, so they may select their difficulty level.*
 
 > *I created another list item to keep track of the letters the user has already tried, so that if they enter the same wrong answer more than once, they will only lose one guess for that letter.*
 
->4. Deduct a guess **only** when the user guesses incorrectly
+4. Deduct a guess **only** when the user guesses incorrectly
 
->5. End the game when the word is guessed, or when the user runs out of guesses
+5. End the game when the word is guessed, or when the user runs out of guesses
 
->  * Whether the player wins or loses, display the full word at the end of the game
+  * Whether the player wins or loses, display the full word at the end of the game
 
 > *As with all of my programs, this one will run until the user decides to exit. Once a word list is chosen and loaded, the program will ask the user for a Difficulty Level (number of guesses), and continue to run this portion of the program, asking for Difficulty and then simulating the game.*
 
