@@ -3,125 +3,13 @@
 # Hangman
 #
 
-
-
 # purty stuff
 import variables
-
 import os.path
-
 # Functions provided by the instructor
-
-# -----------------------------------
-# Helper code
-# (you don't need to understand this helper code)
-import random
-import string
-
-
-def load_words(filename):
-    """
-    Returns a list of valid words. Words are strings of lowercase letters.
-
-    Depending on the size of the word list, this function may
-    take a while to finish.
-    """
-    print variables.hr + "\t\tLoading word list from file..."
-    # inFile: file
-    inFile = open(filename, 'r', 0)
-    # line: string
-    line = inFile.readline()
-    # wordlist: list of strings
-    wordlist = string.split(line)
-    print " \n\t\t", len(wordlist), "words loaded from " + filename
-    return wordlist
-
-def choose_word(wordlist):
-    """
-    wordlist (list): list of words (strings)
-
-    Returns a word from wordlist at random
-    """
-    return random.choice(wordlist)
-
-# end of helper code
-# -----------------------------------
-
-
-
-
-
-
+import helper_code
 # MY FUNCTIONS #
-
-# Check to see if all letters in the word have been guessed
-def word_guessed():
-    i = 0
-    # Check to see if word has been guessed
-    for char in word:
-        if not found_list[i]:
-            # print "\nword unsolved\n"
-            return
-        i += 1
-    print '\nword solved!\n'
-    solved = True
-    return solved
-
-
-
-# Check to see if the user has already used this letter
-# Will not deduct guesses for a wrong letter entered more than once
-def already_used_letter(guess):
-    for char in list_of_guesses:
-        if guess == char:
-            return True
-
-    # If not already used, remove letter from alphabet list to show user what letters are left
-    list_of_guesses.append(guess)
-    remove_letter(guess)
-    return False
-
-
-# Remove letter from alphabet list to show user what letters are left
-def remove_letter(guess):
-    i = 0
-    for character in alphabet:
-        if guess == character:
-            alphabet[i] = " "
-            return
-        i += 1
-
-
-
-# Check to see if letter is in the word
-def check_guess(num_guesses):
-    guess_flag = False
-    i = 0
-    print variables.hr
-
-    # Check to see if the user's guess is in the word
-    for char in word:
-        if guess.lower() == character_list[i]:
-            found_list[i] = True
-            progress_list[i] = character_list[i]
-            guess_flag = True
-            print "\n\n\t\tCharacter found! Good guess!\n\n"
-
-        i += 1
-
-    # Check to see if the guess was found. If not, deduct one guess
-    if not guess_flag:
-        num_guesses -= 1
-        print "\n\n\t\tCharacter not found :( Lost one guess"
-
-    # Tell User how many guesses are left
-    print "\n\n\t\tGUESSES REMAINING: " + str(num_guesses) + "\n\n\n"
-    return num_guesses
-
-
-
-
-
+import my_functions
 
 # PROGRAM BEGINS #
 num_guesses = 0
@@ -130,12 +18,7 @@ filename = ""
 # While the user has not exited
 while filename.lower() != "exit" and filename.lower() != "quit":
 
-    print variables.hangman
-
-    # Get file name for word list from user
-    print variables.hr + "Enter the full file name of the word list you would like to use\n"
-    print "Hit Enter to use the default wordlist, words.txt\n\nType quit to exit the program\n\n"
-    filename = raw_input("\t>>>\t")
+    filename = my_functions.select_file()
 
     # Break if user types quit or exit
     if filename.lower() == "exit" or filename.lower() == "quit":
@@ -144,8 +27,7 @@ while filename.lower() != "exit" and filename.lower() != "quit":
     # If no input, use default word list
     elif filename == "":
         filename = "words.txt"
-        wordlist = load_words(filename)
-
+        word_list = helper_code.load_words(filename)
 
     # Otherwise use custom word list
     else:
@@ -160,7 +42,7 @@ while filename.lower() != "exit" and filename.lower() != "quit":
             if filename == "":
                 filename = "words.txt"
 
-        wordlist = load_words(filename)
+        word_list = helper_code.load_words(filename)
 
     # Continue running unless user inputs a negative value
     while num_guesses >= 0:
@@ -188,17 +70,12 @@ while filename.lower() != "exit" and filename.lower() != "quit":
         else:
             num_guesses = int(num_guesses)
 
-
         # Initialize variables
-        word = choose_word(wordlist)
+        word = helper_code.choose_word(word_list)
         character_list = []
         found_list = []
         progress_list = []
         list_of_guesses = []
-
-
-        # print word
-
 
         # Tell user how long the word is
         print variables.hr + "\n\nNumber of letters in word: " + str(len(word))
@@ -207,7 +84,6 @@ while filename.lower() != "exit" and filename.lower() != "quit":
             blanks += " _ "
 
         print "\n" + blanks
-
 
         # Iterate through word
         for character in word:
@@ -218,7 +94,6 @@ while filename.lower() != "exit" and filename.lower() != "quit":
             found_list.append(False)
             # Make a list to keep track of the partially guessed word to provide to the user
             progress_list.append("_")
-
 
         # While user has not guessed the word
         while not solved:
@@ -244,37 +119,24 @@ while filename.lower() != "exit" and filename.lower() != "quit":
 
             # Check to see if user has already tried that letter
             # If so, tell them letter has been used. User will be prompted for another guess
-            if already_used_letter(guess):
+            if my_functions.already_used_letter(guess, list_of_guesses, alphabet):
                 print "\n\nYou have already used that letter!\n\n"
 
             # Otherwise, check to see if guess is in the word
             else:
-                num_guesses = check_guess(num_guesses)
+                num_guesses = my_functions.check_guess(word, guess, num_guesses, character_list, found_list, progress_list)
 
             # Check to see if word has been solved
-            solved = word_guessed()
+            solved = my_functions.word_guessed(word, found_list)
             if solved:
                 print "\n\n Correct! The word was: " + word.upper()
                 break
 
-            if num_guesses > 5:
-                print variables.hangman_picture_6
-            elif num_guesses == 5:
-                print variables.hangman_picture_5
-            elif num_guesses == 4:
-                print variables.hangman_picture_4
-            elif num_guesses == 3:
-                print variables.hangman_picture_3
-            elif num_guesses == 2:
-                print variables.hangman_picture_2
-            elif num_guesses == 1:
-                print variables.hangman_picture_1
+            # print "animation"
+            my_functions.print_hangman(num_guesses)
 
             # If not solved, and out of guesses, end round
-            if not solved and num_guesses == 0:
-                print variables.hr + variables.hangman_picture_0 + "\n\n you lost :( out of guesses\n\n"
-                print "\n\n\tThe word was: " + word.upper()
-                lost = True
+            if my_functions.lost_game(solved, num_guesses, word):
                 break
 
             # Print partially guessed word

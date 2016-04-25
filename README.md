@@ -12,6 +12,17 @@ PDFs of the assignments are included in the repo, as well as the starting code a
 
 >_~ Kimberly the Geek_
 
+## Table of Contents
+
+ - [Problem Set 1 - Paying Off Credit Card Debt](#problem-set-1)
+   - [Problem 1: Paying the Minimum](#problem-1)
+   - [Problem 2: Paying Off Debt in a Year](#problem-2)
+   - [Problem 3: Use Bisection Searching to Improved Efficiency](#problem-3)
+   - [Comments](#comments-on-problem-set-1)
+ - [Problem Set 2](#problem-set-2)
+   - [Part 1 - Successive Approximation](#part-1-successive-approximation)
+     - [Problem 1: Evaluating Polynomials](#problem-1)
+
 
 
 
@@ -40,7 +51,7 @@ $10) such that we can pay off the debt within a year. Try it out with large inpu
 fast it is. Produce the output in the same format as you did in problem 2. 
 
 
-
+###### Comments on Problem Set 1
 
 >*I like to make programs that work like a standard application does. In the real world, we usually don't want a program to run once and then exit, we want them to run until the user chooses to exit the program.*
 
