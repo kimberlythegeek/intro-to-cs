@@ -1,4 +1,4 @@
-# Intro to Computer Science
+s# Intro to Computer Science
 
 Assignments from MIT's Introduction to Computer Science and Programming class on OpenCourseware: http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/
 
@@ -132,9 +132,47 @@ You will want to do all of your coding for this problem within this file as well
 be writing a program that depends on each function you write. 
 
 
+>*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
+
+>*Kimberly the Geek*
+
 >The teacher's instructions state that the program must:
 
 >1. Select a random word from `words.txt`
 
 >  *I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
+
+>2. Be interactive:
+
+>  * Let user how many letters are in the word
+
+>  * Ask the user to guess letters
+
+>  * Give feedback after each guess
+
+>  * Display the partially guessed word
+
+> *I created a list item to keep track of the remaining letters in the alphabet that the user has **not** yet used, so that I can show it to the user each turn.*
+
+> *At any point while guessing letters, the user can type `exit` or `quit` to return to the previous screen (Difficulty Selection). Otherwise, only the first letter input will be read.*
+
+>3. Have a finite number of guesses
+
+>  * Remind user how many guesses are left
+
+> *I did create the game to have a finite number of guess, but I also allow the user to choose how many guesses they would like, so they may select their difficulty level.*
+
+> *I created another list item to keep track of the letters the user has already tried, so that if they enter the same wrong answer more than once, they will only lose one guess for that letter.*
+
+>4. Deduct a guess **only** when the user guesses incorrectly
+
+>5. End the game when the word is guessed, or when the user runs out of guesses
+
+>  * Whether the player wins or loses, display the full word at the end of the game
+
+> *As with all of my programs, this one will run until the user decides to exit. Once a word list is chosen and loaded, the program will ask the user for a Difficulty Level (number of guesses), and continue to run this portion of the program, asking for Difficulty and then simulating the game.*
+
+> *At any point while guessing letters, the user can type `exit` or `quit` to return to the Difficulty Selection screen. While on the Difficulty Selection screen, the user can type `-1`, or any other negative value, to return to the main menu, where the program prompts the user for a word list. While on the main menu, the user can type `exit` or `quit` to fully exit the program.*
+
+
 
