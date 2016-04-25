@@ -142,27 +142,27 @@ ____
 
 >The teacher's instructions state that the program must:
 
->1. Select a random word from `words.txt`
+1. Select a random word from `words.txt`
 
->2. Be interactive:
+2. Be interactive:
 
->  * Let user how many letters are in the word
+  * Let user how many letters are in the word
 
->  * Ask the user to guess letters
+  * Ask the user to guess letters
 
->  * Give feedback after each guess
+  * Give feedback after each guess
 
->  * Display the partially guessed word
+  * Display the partially guessed word
 
->3. Have a finite number of guesses
+3. Have a finite number of guesses
 
->  * Remind user how many guesses are left
+  * Remind user how many guesses are left
 
->4. Deduct a guess **only** when the user guesses incorrectly
+4. Deduct a guess **only** when the user guesses incorrectly
 
->5. End the game when the word is guessed, or when the user runs out of guesses
+5. End the game when the word is guessed, or when the user runs out of guesses
 
->  * Whether the player wins or loses, display the full word at the end of the game
+  * Whether the player wins or loses, display the full word at the end of the game
 
 >*I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
 
