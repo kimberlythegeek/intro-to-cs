@@ -10,7 +10,7 @@ PDFs of the assignments are included in the repo, as well as the starting code a
 
 >_I did these assignments a little bit differently than the instructor suggests. This is a free course and, as such, there is no feedback or evaluation. So I decided to have some fun :)_
 
->_Kimberly the Geek_
+>_~ Kimberly the Geek_
 
 
 
@@ -159,11 +159,11 @@ The teacher's instructions state that the program must:
 
   * Whether the player wins or loses, display the full word at the end of the game
 
+___
+
 >*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
 
->*Kimberly the Geek*
-
->___
+>*~ Kimberly the Geek*
 
 >*I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
 
