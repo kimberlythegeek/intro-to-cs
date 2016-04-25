@@ -174,9 +174,9 @@ ____
 
 >  * Whether the player wins or loses, display the full word at the end of the game
 
-> *As with all of my programs, this one will run until the user decides to exit. Once a word list is chosen and loaded, the program will ask the user for a Difficulty Level (number of guesses), and continue to run this portion of the program, asking for Difficulty and then simulating the game.*
+> + *As with all of my programs, this one will run until the user decides to exit. Once a word list is chosen and loaded, the program will ask the user for a Difficulty Level (number of guesses), and continue to run this portion of the program, asking for Difficulty and then simulating the game.*
 
-> *At any point while guessing letters, the user can type `exit` or `quit` to return to the Difficulty Selection screen. While on the Difficulty Selection screen, the user can type `-1`, or any other negative value, to return to the main menu, where the program prompts the user for a word list. While on the main menu, the user can type `exit` or `quit` to fully exit the program.*
+> + *At any point while guessing letters, the user can type `exit` or `quit` to return to the Difficulty Selection screen. While on the Difficulty Selection screen, the user can type `-1`, or any other negative value, to return to the main menu, where the program prompts the user for a word list. While on the main menu, the user can type `exit` or `quit` to fully exit the program.*
 
 
 
