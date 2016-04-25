@@ -1,4 +1,4 @@
-s# Intro to Computer Science
+# Intro to Computer Science
 
 Assignments from MIT's Introduction to Computer Science and Programming class on OpenCourseware: http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/
 
