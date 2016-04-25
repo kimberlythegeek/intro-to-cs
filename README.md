@@ -132,6 +132,9 @@ You will want to do all of your coding for this problem within this file as well
 be writing a program that depends on each function you write. 
 
 
+____
+
+
 >*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
 
 >*Kimberly the Geek*
