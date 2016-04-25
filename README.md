@@ -164,9 +164,9 @@ ____
 
 >  * Remind user how many guesses are left
 
-> *I did create the game to have a finite number of guess, but I also allow the user to choose how many guesses they would like, so they may select their difficulty level.*
+>+ *I did create the game to have a finite number of guess, but I also allow the user to choose how many guesses they would like, so they may select their difficulty level.*
 
-> *I created another list item to keep track of the letters the user has already tried, so that if they enter the same wrong answer more than once, they will only lose one guess for that letter.*
+>+ *I created another list item to keep track of the letters the user has already tried, so that if they enter the same wrong answer more than once, they will only lose one guess for that letter.*
 
 >4. Deduct a guess **only** when the user guesses incorrectly
 
