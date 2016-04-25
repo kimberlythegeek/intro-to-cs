@@ -136,6 +136,8 @@ be writing a program that depends on each function you write.
 
 >*Kimberly the Geek*
 
+
+
 >The teacher's instructions state that the program must:
 
 >1. Select a random word from `words.txt`
