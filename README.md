@@ -135,11 +135,6 @@ be writing a program that depends on each function you write.
 ____
 
 
->*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
-
->*Kimberly the Geek*
-
-
 The teacher's instructions state that the program must:
 
 1. Select a random word from `words.txt`
@@ -163,6 +158,12 @@ The teacher's instructions state that the program must:
 5. End the game when the word is guessed, or when the user runs out of guesses
 
   * Whether the player wins or loses, display the full word at the end of the game
+
+>*So this was a fun one! The ASCII art, though lovely, is not mine. For the opening title I used an ASCII letter generator from http://patorjk.com/software/taag/, and the hangman art is from http://ascii.co.uk/, though I did modify it a little to show "animation". I hope you enjoy it!*
+
+>*Kimberly the Geek*
+
+>___
 
 >*I modified the helper code so that the program asks the user for a `filename`, or the user can press `Enter` to use the default `words.txt`*
 
