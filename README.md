@@ -20,8 +20,11 @@ PDFs of the assignments are included in the repo, as well as the starting code a
    - [Problem 3: Use Bisection Searching to Improved Efficiency](#problem-3)
    - [Comments](#comments-on-problem-set-1)
  - [Problem Set 2](#problem-set-2)
-   - [Part 1 - Successive Approximation](#part-1-successive-approximation)
-     - [Problem 1: Evaluating Polynomials](#problem-1)
+   - [Part 1 - Successive Approximation](#part-1---successive-approximation)
+     - [Problem 1: Evaluating Polynomials](#problem-1-1)
+     - [Problem 2: Derivatives of Polynomials](#problem-2-1)
+     - [Problem 3: Root of a Polynomials using Newton's Method](#problem-3-1)
+     - [Comments](#comments-on-problem-set-2---part-1)
 
 
 
@@ -99,7 +102,7 @@ that the absolute value of f(x) is less than `epsilon`, i.e. f(x) is close enoug
 root it found as a float. 
 
 
-
+###### Comments on Problem Set 2 - Part 1
 
 >*Again I made a program that will run until the user chooses to exit. I also added a program/function that simply prints out a polynomial.*
 
