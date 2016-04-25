@@ -6,7 +6,7 @@
 
 
 # purty stuff
-import variables
+import pt2_variables
 
 import os.path
 
@@ -26,7 +26,8 @@ def load_words(filename):
     Depending on the size of the word list, this function may
     take a while to finish.
     """
-    print variables.hr + "\t\tLoading word list from file..."
+    print pt2
+    pt2_variables.hr + "\t\tLoading word list from file..."
     # inFile: file
     inFile = open(filename, 'r', 0)
     # line: string
@@ -97,7 +98,7 @@ def remove_letter(guess):
 def check_guess(num_guesses):
     guess_flag = False
     i = 0
-    print variables.hr
+    print pt2_variables.hr
 
     # Check to see if the user's guess is in the word
     for char in word:
@@ -130,10 +131,10 @@ filename = ""
 # While the user has not exited
 while filename.lower() != "exit" and filename.lower() != "quit":
 
-    print variables.hangman
+    print pt2_variables.hangman
 
     # Get file name for word list from user
-    print variables.hr + "Enter the full file name of the word list you would like to use\n"
+    print pt2_variables.hr + "Enter the full file name of the word list you would like to use\n"
     print "Hit Enter to use the default wordlist, words.txt\n\nType quit to exit the program\n\n"
     filename = raw_input("\t>>>\t")
 
@@ -154,7 +155,7 @@ while filename.lower() != "exit" and filename.lower() != "quit":
         while not os.path.isfile(filename):
 
             # If not, prompt again
-            print variables.hr + "File not found! Please try again or hit Enter for the default word list:\n\n"
+            print pt2_variables.hr + "File not found! Please try again or hit Enter for the default word list:\n\n"
             filename = raw_input("\t>>>\t")
             # If no input, use default word list
             if filename == "":
@@ -170,12 +171,12 @@ while filename.lower() != "exit" and filename.lower() != "quit":
         lost = False
         alphabet = []
 
-        for character in variables.alphabet:
+        for character in pt2_variables.alphabet:
             alphabet.append(character)
 
         # Ask user how many guesses they want for the word
-        print variables.hr + "How many guesses would you like?\n"
-        print "Hit Enter to use the default of 10\nType -1 to return to Main Menu\n\n"
+        print pt2_variables.hr + "\t\tCHOOSE DIFFICULTY\n\nHow many guesses would you like?\n"
+        print "Hit Enter to use the default of 10\n\nType -1 to return to Main Menu\n\n"
         num_guesses = raw_input("\t>>>\t")
 
         # If no input, set number of guesses to default (10)
@@ -201,7 +202,7 @@ while filename.lower() != "exit" and filename.lower() != "quit":
 
 
         # Tell user how long the word is
-        print variables.hr + "\n\nNumber of letters in word: " + str(len(word))
+        print pt2_variables.hr + "\n\nNumber of letters in word: " + str(len(word))
         blanks = ""
         for character in word:
             blanks += " _ "
@@ -258,21 +259,21 @@ while filename.lower() != "exit" and filename.lower() != "quit":
                 break
 
             if num_guesses > 5:
-                print variables.hangman_picture_6
+                print pt2_variables.hangman_picture_6
             elif num_guesses == 5:
-                print variables.hangman_picture_5
+                print pt2_variables.hangman_picture_5
             elif num_guesses == 4:
-                print variables.hangman_picture_4
+                print pt2_variables.hangman_picture_4
             elif num_guesses == 3:
-                print variables.hangman_picture_3
+                print pt2_variables.hangman_picture_3
             elif num_guesses == 2:
-                print variables.hangman_picture_2
+                print pt2_variables.hangman_picture_2
             elif num_guesses == 1:
-                print variables.hangman_picture_1
+                print pt2_variables.hangman_picture_1
 
             # If not solved, and out of guesses, end round
             if not solved and num_guesses == 0:
-                print variables.hr + variables.hangman_picture_0 + "\n\n you lost :( out of guesses\n\n"
+                print pt2_variables.hr + pt2_variables.hangman_picture_0 + "\n\n you lost :( out of guesses\n\n"
                 print "\n\n\tThe word was: " + word.upper()
                 lost = True
                 break
