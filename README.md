@@ -168,15 +168,17 @@ The teacher's instructions state that the program must:
 
 >*I created a list item to keep track of the remaining letters in the alphabet that the user has **not** yet used, so that I can show it to the user each turn.*
 
->*At any point while guessing letters, the user can type `exit` or `quit` to return to the previous screen (Difficulty Selection). Otherwise, only the first letter input will be read.*
-
 >*I did create the game to have a finite number of guess, but I also allow the user to choose how many guesses they would like, so they may select their difficulty level.*
 
 >*I created another list item to keep track of the letters the user has already tried, so that if they enter the same wrong answer more than once, they will only lose one guess for that letter.*
 
 >*As with all of my programs, this one will run until the user decides to exit. Once a word list is chosen and loaded, the program will ask the user for a Difficulty Level (number of guesses), and continue to run this portion of the program, asking for Difficulty and then simulating the game.*
 
->*At any point while guessing letters, the user can type `exit` or `quit` to return to the Difficulty Selection screen. While on the Difficulty Selection screen, the user can type `-1`, or any other negative value, to return to the main menu, where the program prompts the user for a word list. While on the main menu, the user can type `exit` or `quit` to fully exit the program.*
+>*At any point while guessing letters, the user can type `exit` or `quit` to return to the Difficulty Selection screen.*
+
+>*While on the Difficulty Selection screen, the user can type `-1`, or any other negative value, to return to the main menu, where the program prompts the user for a word list.*
+
+>*While on the main menu, the user can type `exit` or `quit` to fully exit the program.*
 
 
 
